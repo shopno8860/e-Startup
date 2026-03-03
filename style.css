@@ -182,8 +182,13 @@ header{
 
 .btn-video {
   background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  text-align: center;
   border: none;
-  font-size: 20px;
+  font-size: 25px;
   color: #4CAF50;
   cursor: pointer;
   font-weight: 500;
@@ -193,6 +198,70 @@ header{
 
 .hero-image img {
   width: 100%;
+}
+
+
+/* ===== VIDEO MODAL ===== */
+
+.video-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  z-index: 9999;
+}
+
+/* Show modal */
+.video-modal:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.video-modal-content {
+  width: 90%;
+  max-width: 800px;
+  background: #000;
+  border-radius: 16px;
+  padding: 20px;
+  position: relative;
+
+  transform: scale(0.7);
+  transition: 0.3s ease;
+}
+
+.video-modal:target .video-modal-content {
+  transform: scale(1);
+}
+
+/* Close button */
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+/* Responsive video */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 /* FEATURES SECTION */
@@ -1071,13 +1140,20 @@ justify-content: center;
 .hero-buttons {
     justify-content: center;
     gap: 15px;
+   
     /* flex-wrap: wrap; */
 
 }
 .btn-primary {
-    padding: 8px 20px;
+    padding: 8px 15px;
+     font-size: 16px;
+     font-weight: 400;
     border-radius: 20px;
 
+}
+.btn-video{
+
+     font-size: 18px;
 }
 
 .hero-image {
