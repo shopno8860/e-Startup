@@ -20,6 +20,7 @@ body {
 }
 header{
     background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -34,8 +35,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 5%;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 20px 5%;
+    /* box-shadow: 0 2px 10px rgba(0,0,0,0.05); */
 }
 
 .logo {
@@ -1069,7 +1070,14 @@ justify-content: center;
 
 .hero-buttons {
     justify-content: center;
-    flex-wrap: wrap;
+    gap: 15px;
+    /* flex-wrap: wrap; */
+
+}
+.btn-primary {
+    padding: 8px 20px;
+    border-radius: 20px;
+
 }
 
 .hero-image {
@@ -1088,7 +1096,7 @@ justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    padding: 56px 5px;
+    padding: 30px 5px;
 }
 
 .feature-card {
@@ -1171,7 +1179,7 @@ justify-content: center;
 
 /* check-features section mobile */
 .check-features-section {
-  padding: 56px 0;
+  padding: 56px 5px;
 }
 .check-features-wrap {
   flex-direction: column;
@@ -1202,7 +1210,7 @@ justify-content: center;
 /* faq section mobile */
 .faq-wrap {
   flex-direction: column;
-  padding: 0 5px;
+  padding: 0;
   gap: 32px;
 }
 .faq-intro{
