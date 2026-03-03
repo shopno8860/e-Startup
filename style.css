@@ -204,14 +204,21 @@ header{
   background: #ffffff;
   padding: 40px 30px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 12px;
-  width: 250px;
+  width: 300px;
+  height: 300px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
  
  
 }
+.feature-card-flex{
+   text-align: center;
+}
 
-.feature-card .icon {
+.feature-card .feature-card-flex .icon {
   font-size: 40px;
   margin-bottom: 20px;
   color: #4CAF50;
@@ -572,10 +579,10 @@ background: #FFF;
 .plan-orange { color: #e67e22; }
 .plan-dark-blue { color: #2980b9; }
 
-.pricing-icon { background: rgba(76, 175, 80, 0.15);}
+/* .pricing-icon { background: rgba(76, 175, 80, 0.15);}
 .pricing-icon { background: rgba(52, 152, 219, 0.15);}
 .pricing-icon { background: rgba(230, 126, 34, 0.15);}
-.pricing-icon { background: rgba(41, 128, 185, 0.15);}
+.pricing-icon { background: rgba(41, 128, 185, 0.15);} */
 
 
 .pricing-price {
@@ -594,11 +601,10 @@ background: #FFF;
   width: 56px;
   height: 56px;
   margin: 0 auto 22px;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
+  font-size: 35px;
 }
 
 .pricing-features {
@@ -617,6 +623,7 @@ background: #FFF;
 .pricing-btn {
   width: 100%;
   padding: 12px 24px;
+  background-color: #FFF;
   color: #4CAF50;
   border: 1px solid #4CAF50;
   border-radius: 25px;
