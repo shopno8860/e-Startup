@@ -39,3 +39,20 @@ document.querySelectorAll(".faq-question").forEach(btn => {
   });
 });
 
+//ContactInfo
+
+const form= document.getElementById("contact-form");
+form.addEventListener("submit",function(e){
+  e.preventDefault();
+  let name = document.getElementById("contact-name").value;
+  let email = document.getElementById("contact-email").value;
+  let subject = document.getElementById("contact-subject").value;
+  let message = document.getElementById("contact-message").value;
+
+  console.log(name);
+   console.log(email);
+    console.log(subject);
+     console.log(message);
+
+});
+

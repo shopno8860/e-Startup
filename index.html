@@ -66,7 +66,7 @@
         <button class="btn-primary">Get Started</button>
         <!-- <button class="btn-video"><i class="fa-solid fa-circle-play"></i> Watch Video</button> -->
          <a href="#videoModal" class="btn-video">
-          <i class="fa-solid fa-circle-play"></i> Watch Video
+          <span class="video-icon"><i class="fa-solid fa-circle-play"></i></span> Watch Video
         </a>
       </div>
     </div>
@@ -436,13 +436,13 @@
           </div>
         </div>
       </div>
-      <form class="contact-form">
+      <form id="contact-form" class="contact-form">
         <div class="form-row">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
+          <input id="contact-name" type="text" placeholder="Your Name" required />
+          <input id="contact-email" type="email" placeholder="Your Email" required />
         </div>
-        <input type="text" placeholder="Subject" class="form-full" />
-        <textarea placeholder="Message" rows="5" class="form-full"></textarea>
+        <input id="contact-subject" type="text" placeholder="Subject" class="form-full" />
+        <textarea id="contact-message" placeholder="Message" rows="5" class="form-full"></textarea>
         <div class="contact-submit-container">
           <button type="submit" class="contact-submit">Send Message</button>
         </div>
